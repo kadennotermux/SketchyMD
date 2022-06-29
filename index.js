@@ -59,14 +59,14 @@ console.log(color('  😈Sketchy Bot. 2022😈','mediumseagreen'))
     console.log(color('🔮','red'), color('Source Code Version: 3.0', 'aqua'))
     console.log(color('🔮','red'), color('Bug? Error? Suggestion? Talk to developer:', 'aqua'))
     console.log(color('🔮', 'cyan'), color('https://wa.me/254792893310'))
-    console.log(color('🔮', 'cyan'), color('Cheems Bot Is Online...', 'pink'))
+    console.log(color('🔮', 'cyan'), color('ginger Bot Is Online...', 'pink'))
     console.log(color('🔮', 'cyan'), color('Welcome Back Owner! Hope You Doing Well~', 'magenta'))
     console.log(color('🔮','red'), color('Thanks For Using ginger Bot', 'white'))
     let { version, isLatest } = await fetchLatestBaileysVersion()
     const XeonBotInc = XeonBotIncConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Subscribe Xeon','Safari','1.0.0'],
+        browser: ['ginger','Safari','1.0.0'],
         auth: state,
         version
     })
@@ -160,12 +160,12 @@ XeonBotInc.ev.on('group-participants.update', async (anu) => {
                 xeonbody = `┌─⬢
 │「  Hᴇʟʟᴏ」
 └┬⬢ 「 @${xeonName.split("@")[0]}  」
-   │⬢━━▶  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
-   │⬢━━▶  ${metadata.subject}
-   │⬢━━▶  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │⬢━━▶ ${xmembers}th
-   │⬢━━▶  𝗝𝗼𝗶𝗻𝗲𝗱 : 
-   │⬢━━▶ ${xtime} ${xdate}
+   │⬢➤ 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
+   │⬢➤ ${metadata.subject}
+   │⬢➤ 𝗠𝗲𝗺𝗯𝗲𝗿 : 
+   │⬢➤${xmembers}th
+   │⬢➤ 𝗝𝗼𝗶𝗻𝗲𝗱 : 
+   │⬢➤${xtime} ${xdate}
    └───────────────┈ ⳹`
    //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
@@ -202,14 +202,14 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                     const xeonmembers = metadata.participants.length
                     let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "254792893310-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: buffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                     xeonbody = `┌─⬢
-│「 ʙʏᴇ ʙʏᴇ ᴀss 👋 」
+│「 ʙʏᴇ ʙʏᴇ 👋 」
 └┬⬢ 「 @${xeonName.split("@")[0]}  」
-   │⬢━━▶  𝗟𝗲𝗳𝘁 
-   │⬢━━▶ ${metadata.subject}
-   │⬢━━▶  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │⬢━━▶ ${xeonmembers}th
-   │⬢━━▶  𝗧𝗶𝗺𝗲 : 
-   │⬢━━▶  ${xeontime} ${xeondate}
+   │⬢➤ 𝗟𝗲𝗳𝘁 
+   │⬢➤${metadata.subject}
+   │⬢➤ 𝗠𝗲𝗺𝗯𝗲𝗿 : 
+   │⬢➤${xeonmembers}th
+   │⬢➤ 𝗧𝗶𝗺𝗲 : 
+   │⬢➤ *${xeontime}*  *${xeondate}*
    └───────────────┈ ⳹`
       //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
