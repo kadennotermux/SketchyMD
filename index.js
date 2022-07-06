@@ -131,7 +131,7 @@ let docs = pickRandom(documents)
 
 XeonBotInc.ev.on('group-participants.update', async (anu) => {
         console.log(anu)
-        //if (!wlcm.includes(anu.id)) return //remove forwad slashes to make it welcome on off
+        if (!wlcm.includes(anu.id)) return //remove forwad slashes to make it welcome on off
         try {
             let metadata = await XeonBotInc.groupMetadata(anu.id)
             let participants = anu.participants
@@ -158,15 +158,13 @@ XeonBotInc.ev.on('group-participants.update', async (anu) => {
 	            const xmembers = metadata.participants.length
                 let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "254792893310-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: buffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                 xeonbody = `┌─⬢
-│「  Hᴇʟʟᴏ」
+│Hey There🥰
 └┬⬢ 「 @${xeonName.split("@")[0]}  」
-   │⬢➤ 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
-   │⬢➤ ${metadata.subject}
-   │⬢➤ 𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │⬢➤${xmembers}th
-   │⬢➤ 𝗝𝗼𝗶𝗻𝗲𝗱 : 
-   │⬢➤${xtime} ${xdate}
-   └───────────────┈ ⳹`
+   │🌹*WELCOME TO OUR GROUP*
+   │🌹${metadata.subject}
+   │🌹*Joining Time* : 
+   │🌹${xtime} ${xdate}
+   └───────────────┈ 𝒔𝒌𝒆𝒕𝒄𝒉𝒚𝑩𝒐𝒕𝒔`
    //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
@@ -202,20 +200,20 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                     const xeonmembers = metadata.participants.length
                     let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "254792893310-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: buffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                     xeonbody = `┌─⬢
-│「 ʙʏᴇ ʙʏᴇ 👋 」
-└┬⬢ 「 @${xeonName.split("@")[0]}  」
-   │⬢➤ 𝗟𝗲𝗳𝘁 
-   │⬢➤${metadata.subject}
-   │⬢➤ 𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │⬢➤${xeonmembers}th
-   │⬢➤ 𝗧𝗶𝗺𝗲 : 
-   │⬢➤ *${xeontime}*  *${xeondate}*
-   └───────────────┈ ⳹`
+│MEMBER LEFT
+└┬⬢ 🥲 @${xeonName.split("@")[0]}  
+  │🌹*GC* 
+  │🌹${metadata.subject}
+  │🌹*Member No* : 
+  │🌹${xeonmembers}th
+  │🌹*Current Date* : 
+  │🌹*${xeontime}*  *${xeondate}*
+  └───────────────┈ 𝒔𝒌𝒆𝒕𝒄𝒉𝒚𝑩𝒐𝒕𝒔`
       //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
 let buttons = [
-{buttonId: `wkwkwk`, buttonText: {displayText: 'ᴜᴍʙᴡᴀ'}, type: 1}
+{buttonId: `wkwkwk`, buttonText: {displayText: 'Wont Miss u'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
@@ -230,7 +228,7 @@ buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title: `${ownername}`,
-body: `Bye! my friend, take care.`,
+body: `Bye! Nobody misses u`,
 mediaType:2,
 thumbnail: buffer,
 sourceUrl: `${websitex}`,
