@@ -157,19 +157,24 @@ XeonBotInc.ev.on('group-participants.update', async (anu) => {
 	            const xdate = moment.tz('Africa/Nairobi').format('DD/MM/YYYY')
 	            const xmembers = metadata.participants.length
                 let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "254792893310-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: buffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                xeonbody = `┌─⬢
-│Hey There🥰
-└┬⬢ 「 @${xeonName.split("@")[0]}  」
-   │🌹*WELCOME TO OUR GROUP*
-   │🌹${metadata.subject}
-   │🌹*Joining Time* : 
-   │🌹${xtime} ${xdate}
-   └───────────────┈ 𝒔𝒌𝒆𝒕𝒄𝒉𝒚𝑩𝒐𝒕𝒔`
+                xeonbody = `╭────────────────
+ │   ❰⛊𝚂𝙺𝙴𝚃𝙲𝙷𝚈 𝙱𝙾𝚃⛊❱
+ ╰────────────────
+ ╭────────────────
+ │ Hello ▷ Dear
+ │ @${xeonName.split("@")[0]}
+ │ 🥰 *Welcome To our Group*
+ │ ${metadata.subject}
+ │🥵*Joining Time*
+ │   ${xtime} ${xdate}
+ │
+ │*Enjoy Yourself Here*
+ ╰────────────────`
    //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
 let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: '🥰ᴡᴇʟᴋʏ🥰'}, type: 1}
+{buttonId: `wkwwk`, buttonText: {displayText: 'Welcome Dear'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
@@ -199,16 +204,19 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                 	let xeonName = num
                     const xeonmembers = metadata.participants.length
                     let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "254792893310-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: buffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                    xeonbody = `┌─⬢
-│MEMBER LEFT
-└┬⬢ 🥲 @${xeonName.split("@")[0]}  
-  │🌹*GC* 
-  │🌹${metadata.subject}
-  │🌹*Member No* : 
-  │🌹${xeonmembers}th
-  │🌹*Current Date* : 
-  │🌹*${xeontime}*  *${xeondate}*
-  └───────────────┈ 𝒔𝒌𝒆𝒕𝒄𝒉𝒚𝑩𝒐𝒕𝒔`
+                    xeonbody = `╭────────────────
+ │   ❰⛊𝚂𝙺𝙴𝚃𝙲𝙷𝚈 𝙱𝙾𝚃⛊❱
+ ╰────────────────
+ ╭────────────────
+ │ BYE BYE IDIOT😂😂!!
+ │ @${xeonName.split("@")[0]}
+ │🥲 *Left our Group*
+ │ ${metadata.subject}
+ │🥺 *Leaving Time*
+ │   *${xeontime}*  *${xeondate}*
+ │   Mafii
+ │*YOU ARE A KIENYEJI*
+ ╰────────────────`
       //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
